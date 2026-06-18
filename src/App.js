@@ -5,9 +5,7 @@ function App() {
   const [task, setTask] = useState([]);
   const [input, setInput] = useState('');
 
-  function deleteTask(index) {
-    setTask(task.filter((t, i) => i !== index));
-  }
+ 
 
   useEffect(() => {
     fetch('https://my-back-end-production.up.railway.app/tasks')
